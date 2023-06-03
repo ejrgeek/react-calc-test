@@ -9,9 +9,10 @@ export default props => {
     classes += props.operator ? 'operator' : '';
     return (
         <button
+            data-cy='btn'
             onClick={e => props.click && props.click(props.label)}
             className={classes}>
         {props.label}
         </button>
-    )
+    )
 }
